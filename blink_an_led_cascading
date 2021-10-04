@@ -1,5 +1,5 @@
 // ------------
-// Blink an LED Custom
+// Blink an LED Cascading
 // ------------
 
 /*-------------
@@ -78,12 +78,17 @@ void loop() {
  digitalWrite(led1, LOW);
  digitalWrite(led2, LOW);
  digitalWrite(led3, HIGH);
+ 
+  // Wait 1 second...
+ delay(1000);
+ 
+  // Turn off the third LED and turn on the second
+ digitalWrite(led1, LOW);
+ digitalWrite(led2, HIGH);
+ digitalWrite(led3, LOW);
+ 
+ // Wait 1 second...
+ delay(1000);
 
  // And repeat!
 }
-
-
-
-
-
-
