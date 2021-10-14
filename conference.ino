@@ -13,10 +13,10 @@ int pirState = 0;
 int currentState = LOW; 
 
 void setup() {
-  pinMode(ledPin, OUTPUT);       // set LED as output
-  pinMode(inputPin, INPUT);      // set sensor as input
-  Particle.publish("conf_avail", status, PRIVATE); // send test publish
-  Serial.begin(9600);
+    pinMode(ledPin, OUTPUT);       // set LED as output
+    pinMode(inputPin, INPUT);      // set sensor as input
+    Particle.publish("conf_avail", status, PRIVATE); // send test publish
+    Serial.begin(9600);
 }
 
 
