@@ -8,7 +8,7 @@ for many other applications) and post the status to Slack.
 
 // Define your variables
 int ledPin          =   D7;     // Choose the D7 pin for the LED
-int inputPi         =   D2;     // Choose the D2 pin for the PIR sensor
+int inputPin        =   D2;     // Choose the D2 pin for the PIR sensor
 int pirState        =   LOW;    // Create a variable to capture the PIR state when read from the D2 pin.
 int currentState    =   LOW;    // This variable will be compared to the pirState varible to determine the status of the conference room. Set it LOW to start.
 
